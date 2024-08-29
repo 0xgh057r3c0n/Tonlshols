@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Tonlshols** is a simple port forwarding tool that utilizes Serveo.net to create SSH tunnels for TCP and HTTP protocols. It allows users to forward local ports to remote ports, making it easier to expose local services to the internet.
+**Tonlshols** is a simple port forwarding tool that utilizes Serveo to create SSH tunnels for TCP and HTTP protocols. It allows users to forward local ports to remote ports, making it easier to expose local services to the internet.
 
 ## Author
 
