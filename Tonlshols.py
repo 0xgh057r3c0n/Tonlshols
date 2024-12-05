@@ -1,14 +1,14 @@
 import os
 import sys
 
-def print_banner():
-    # Define color codes
-    RED = "\033[1;31m"
-    GREEN = "\033[1;32m"
-    YELLOW = "\033[1;33m"
-    BLUE = "\033[1;34m"
-    RESET = "\033[0m"
+# Define color codes globally
+RED = "\033[1;31m"
+GREEN = "\033[1;32m"
+YELLOW = "\033[1;33m"
+BLUE = "\033[1;34m"
+RESET = "\033[0m"
 
+def print_banner():
     print(f"{BLUE}  _______          _       _           _        {RESET}")
     print(f"{BLUE} |__   __|        | |     | |         | |       {RESET}")
     print(f"{GREEN}    | | ___  _ __ | | ___ | |__   ___ | | ___   {RESET}")
@@ -21,10 +21,6 @@ def print_banner():
     print(f"{RED}  Version: 1.0                                 {RESET}")
 
 def get_user_input():
-    RED = "\033[1;31m"
-    GREEN = "\033[1;32m"
-    RESET = "\033[0m"
-
     print(f"{GREEN}Select the protocol to forward:{RESET}")
     print(f"{YELLOW}1. TCP{RESET}")
     print(f"{YELLOW}2. HTTP{RESET}")
@@ -42,10 +38,6 @@ def get_user_input():
     return protocol, port
 
 def create_tunnel(protocol, port):
-    RED = "\033[1;31m"
-    GREEN = "\033[1;32m"
-    RESET = "\033[0m"
-
     if protocol == "tcp":
         print(f"{GREEN}Creating TCP tunnel...{RESET}")
         os.system(f"ssh -R 4444:localhost:{port} serveo.net")
